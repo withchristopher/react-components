@@ -1,0 +1,77 @@
+{
+    "name": "@matthewdowns/react-component-library-boilerplate",
+    "version": "1.0.4",
+    "description": "Optimized template repository for React component libraries.",
+    "keywords": [
+        "boilerplate",
+        "component-library",
+        "eslint",
+        "jest",
+        "react",
+        "react-component-library",
+        "reactjs",
+        "rollup",
+        "styleguidist",
+        "testing-library",
+        "typescript"
+    ],
+    "license": "MIT",
+    "author": "Matthew Downs <matthew.downsc@gmail.com>",
+    "homepage": "https://github.com/matthewdowns/react-component-library-boilerplate#readme",
+    "bugs": {
+        "url": "https://github.com/matthewdowns/react-component-library-boilerplate/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matthewdowns/react-component-library-boilerplate.git"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "npm run styleguide:serve",
+        "lint": "eslint .",
+        "build": "rimraf dist && rollup -c && node scripts/postbuild.js",
+        "test": "jest",
+        "styleguide:build": "styleguidist build",
+        "styleguide:serve": "styleguidist server"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@axe-core/react": "^4.3.1",
+        "@rollup/plugin-node-resolve": "^13.0.5",
+        "@rollup/plugin-typescript": "^8.3.0",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.1.2",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^16.11.1",
+        "@types/react": "^17.0.30",
+        "@types/react-dom": "^17.0.9",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^6.4.0",
+        "eslint": "^7.32.0",
+        "eslint-plugin-react": "^7.26.1",
+        "jest": "^27.4.3",
+        "jest-transform-stub": "^2.0.0",
+        "less": "^4.1.2",
+        "less-loader": "^10.2.0",
+        "postcss": "^8.3.9",
+        "react-styleguidist": "^11.1.7",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.58.0",
+        "rollup-plugin-postcss": "^4.0.1",
+        "rollup-plugin-terser": "^7.0.2",
+        "style-loader": "^3.3.0",
+        "ts-jest": "^27.0.7",
+        "ts-loader": "^9.2.6",
+        "tsconfig-paths-webpack-plugin": "^3.5.1",
+        "typescript": "^4.3.5"
+    },
+    "engines": {
+        "node": ">=12 <=16"
+    },
+    "private": true
+}

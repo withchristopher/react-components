@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "react",
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "removeComments": false,
+      "strict": true,
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "paths": {
+        "@matthewdowns/react-component-library-boilerplate/*": [
+          "./src/*"
+        ]
+      },
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "./node_modules",
+      "./scripts",
+      "./src/**/*.spec.*",
+      "./src/**/*.md.*",
+      "./styleguide"
+    ]
+}

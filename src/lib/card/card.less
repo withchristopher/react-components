@@ -1,0 +1,32 @@
+@import '../../styles/_colors';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 5px 1px @light;
+
+    > .card-header {
+        flex-shrink: 1;
+        padding: 1rem;
+        border-bottom: 1px solid @light;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    > .card-body {
+        flex-grow: 1;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    > .card-footer {
+        flex-shrink: 1;
+        padding: 1rem;
+        border-top: 1px solid @light;
+        font-size: 0.87rem;
+        font-weight: 200;
+    }
+}
